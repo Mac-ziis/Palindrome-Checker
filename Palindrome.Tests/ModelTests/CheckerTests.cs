@@ -26,14 +26,14 @@ namespace Palindrome.Tests
     public void IsPalindrome_PalindromeString_ReturnsFalse()
     {
       //Arrange
-      string validPalindrome = "hello";
+      string invalidPalindrome = "hello";
       Checker checker = new Checker();
 
       //Act
-      bool result = CheckerTests.validPalindrome(validPalindrome);
+      bool result = Checker.invalidPalindrome(invalidPalindrome);
 
       //Assert
-      Assert.IsFalse(result);
+      Assert.IsTrue(result);
     }
   }
 }
