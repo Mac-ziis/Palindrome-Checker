@@ -9,10 +9,16 @@ namespace Palindrome.Tests
   public class CheckerTests
   {
     [TestMethod]
-    public void TextConstructor_CreatesInstanceOfText_Text()
+    public void IsPalindrome_PalindromeString_ReturnsTrue()
     {
-      Text newText = new Text("word");
-      Assert.AreEqual(typeof(Text), newText.GetType());
+      //Arrange
+      string validPalindrome = "civic";
+
+      //Act
+      bool result = Checker.IsPalindrome(validPalindrome);
+
+      //Assert
+      Assert.IsTrue(result);
     }
 
     // [TestMethod]
