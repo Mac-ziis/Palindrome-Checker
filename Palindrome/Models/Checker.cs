@@ -24,6 +24,7 @@ namespace Palindrome.Models
       Array.Reverse(charArray);
       return new string(charArray);
     }
+    
 
   }
 }
