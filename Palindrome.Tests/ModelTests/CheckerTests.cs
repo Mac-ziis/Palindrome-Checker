@@ -13,9 +13,10 @@ namespace Palindrome.Tests
     {
       //Arrange
       string validPalindrome = "civic";
-
+      Checker checker = new Checker();
+      
       //Act
-      bool result = Checker.IsPalindrome(validPalindrome);
+      bool result = Checker.validPalindrome(validPalindrome);
 
       //Assert
       Assert.IsTrue(result);
