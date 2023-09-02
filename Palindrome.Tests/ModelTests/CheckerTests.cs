@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Palindrome.Models;
-using System.Collections.Generic;
+// using System.Collections.Generic;
 using System;
 
 namespace Palindrome.Tests
@@ -20,27 +20,5 @@ namespace Palindrome.Tests
       //Assert
       Assert.IsTrue(result);
     }
-
-    // [TestMethod]
-    // public void GetText_ReturnsText_String()
-    // {
-    //   string word = "meow";
-    //   Text newText = new Text(word);
-    //   string result = newText.Word;
-    //   Assert.AreEqual(word, result);
-    // }
-
-    // [TestMethod]
-    // public static void IsPalindrome_PalindromeString_ReturnsTrue()
-    // {
-    //   // Arrange
-    //   string word = "racecar";
-
-    //   // Act
-    //   bool isPalindrome = PalindromeChecker.IsPalindrome(word);
-
-    //   // Assert
-    //   Assert.IsTrue(isPalindrome);
-    // }
   }
 }
