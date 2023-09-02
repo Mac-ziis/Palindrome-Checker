@@ -35,5 +35,20 @@ namespace Palindrome.Tests
       //Assert
       Assert.IsTrue(result);
     }
+
+    [TestMethod]
+
+    public void IsPalindrome_PalindromeString_ToLowercase()
+    {
+      //Arrange
+      string lowercasePalindrome = "CIVIC";
+      Checker checker = new Checker();
+
+      //Act
+      bool result = Checker.validPalindrome(lowercasePalindrome);
+
+      //Assert
+      Assert.IsTrue(result);
+    }
   }
 }
