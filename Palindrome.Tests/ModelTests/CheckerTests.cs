@@ -21,5 +21,19 @@ namespace Palindrome.Tests
       //Assert
       Assert.IsTrue(result);
     }
+
+    [TestMethod] 
+    public void IsPalindrome_PalindromeString_ReturnsFalse()
+    {
+      //Arrange
+      string validPalindrome = "hello";
+      Checker checker = new Checker();
+
+      //Act
+      bool result = CheckerTests.validPalindrome(validPalindrome);
+
+      //Assert
+      Assert.IsFalse(result);
+    }
   }
 }
